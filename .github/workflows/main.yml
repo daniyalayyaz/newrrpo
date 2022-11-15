@@ -41,8 +41,8 @@ jobs:
           tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.TOKEN }}
       - name: Firebase App Distribution
-      uses: wzieba/Firebase-Distribution-Github-Action@v1.2.1
-      with:
+        uses: wzieba/Firebase-Distribution-Github-Action@v1.2.1
+        with:
         appId: ${{secrets.APPID}}
         token: ${{secrets.TOKEN}}
         groups: test
