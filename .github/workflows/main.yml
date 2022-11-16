@@ -46,4 +46,4 @@ jobs:
           appId: ${{secrets.APPID}}
           token: ${{secrets.TOKEN}}
           groups: test
-          file: build/app/outputs/flutter-apk/app-release.apk
+          file: build/app/outputs/flutter-apk/app-armeabi-v7a-debug.apk
