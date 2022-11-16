@@ -44,6 +44,6 @@ jobs:
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{secrets.APPID}}
-          token: ${{secrets.TOKEN}}
+          token: ${{secrets.FIREBASE_TOKEN}}
           groups: test
           file: build/app/outputs/flutter-apk/app-armeabi-v7a-debug.apk
