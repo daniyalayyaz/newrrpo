@@ -41,9 +41,9 @@ jobs:
           tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.TOKEN }}
       - name: Firebase App Distribution
-        uses: wzieba/Firebase-Distribution-Github-Action
+        uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{secrets.APPID}}
           token: ${{secrets.TOKEN}}
           groups: test
-          file: app/build/outputs/apk/release/app-release.apk
+          file: build/app/outputs/flutter-apk/app-release.apk
